@@ -31,6 +31,7 @@ Commentaires:
 -Par ailleurs, offrir un gestionnaire des contrôles: celui-ci permettrait de lier états et entrées (clavier, manette...).
 
 ---English---
+
 Rubika-Architecture_project
 Project for architecture and C++ lessons.
 This is a school project, that is aimed at improving knowledge of C++ and design patterns.
