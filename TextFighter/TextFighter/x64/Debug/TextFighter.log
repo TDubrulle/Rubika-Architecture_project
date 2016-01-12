@@ -1,0 +1,11 @@
+﻿Build started 11/01/2016 11:22:50.
+     1>Project "C:\Users\Tortliena\Desktop\Projets\0_Supinfogame\ArchitectureProjet\TextFighter\TextFighter\TextFighter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"x64\Debug\TextFighter.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt TextFighter.cpp
+         TextFighter.cpp
+     1>c:\users\tortliena\desktop\projets\0_supinfogame\architectureprojet\textfighter\textfighter\textfighter.cpp(7): fatal error C1083: Cannot open include file: 'Keyboard.hpp': No such file or directory
+     1>Done Building Project "C:\Users\Tortliena\Desktop\Projets\0_Supinfogame\ArchitectureProjet\TextFighter\TextFighter\TextFighter.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.32
