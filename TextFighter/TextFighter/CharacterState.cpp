@@ -90,4 +90,3 @@ void CharacterState::setController(CharacterStateController * newController) {
 		isDefault = true;
 	}
 }
-

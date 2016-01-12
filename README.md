@@ -8,6 +8,16 @@ où deux joueurs s'affrontent jusqu'à ce que l'un perd,
 où que le temps se soit écoulé.
 Le projet a été réalisé avec Visual Studio 2015 et SFML 2.3.2.
 
+Contrôles:
+P1:
+<- et -> : se déplacer
+ctrl droite: attaquer
+maj. droit: bloquer
+P2:
+Q et D : se déplacer
+F : attaquer
+E : bloquer
+
 Commentaires:
 
 */!\ SFML 2.3.2 a été utilisé pour réaliser ce projet. Je n'ai pas généralisé l'accès à la librairie; il faut donc modifier les propriétés du projet pour que celui-ci fonctionne.
@@ -27,5 +37,15 @@ The project is a small fighter game -like Streetfighter or Tekken-,
 where two players fight each other until one is defeated,
 or when the timer runs out.
 It was made with Visual Studio 2015 and SFML 2.3.2.
+
+Controls:
+P1:
+<- and -> : move
+ctrl droite: attack
+maj. droit: guard
+P2:
+Q and D : move
+F : attack
+E : block
 
 Author: Thomas Dubrulle
