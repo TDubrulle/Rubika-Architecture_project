@@ -1,4 +1,5 @@
-############## Français ##############
+---Français---
+
 Rubika-Architecture_project
 Projet pour le cours d'architecture et C++
 
@@ -29,7 +30,7 @@ Commentaires:
 -Faciliter la création de nouveaux états (characterState). Le modèle d'état choisi étant celui mathématique, il faut nécessairement rajouter pour chaque états les états auxquels il peut se rajouter. Cela est avantageux dans le sens qu'il est possible de créer autant d'états que l'on souhaite avec des valeurs différentes, mais cela peut être fastidieux car il faut rajouter tous les liens entre les états.
 -Par ailleurs, offrir un gestionnaire des contrôles: celui-ci permettrait de lier états et entrées (clavier, manette...).
 
-############## English ##############
+---English---
 Rubika-Architecture_project
 Project for architecture and C++ lessons.
 This is a school project, that is aimed at improving knowledge of C++ and design patterns.
