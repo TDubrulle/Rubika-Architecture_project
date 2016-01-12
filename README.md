@@ -62,9 +62,9 @@ Controls:
 P1:
 <- and -> : move
 
-ctrl droite: attack
+Right ctrl: attack
 
-maj. droit: guard
+Right shift: guard
 
 P2:
 
