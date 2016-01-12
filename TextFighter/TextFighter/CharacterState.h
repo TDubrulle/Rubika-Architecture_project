@@ -30,7 +30,7 @@ protected:
 	@return bool true if the state has been finished, false if it isn't.*/
 	virtual bool doAction(Character * character) = 0;
 public:
-	/**Create a characterState. It will not have any cooldown or time to execute. It will not have any state to switch on once finished.
+	/**Create a characterState. It will not have any cooldown or time to execute. It will also not have any state to switch on once finished.
 	It will not change state if it is still being triggered.
 	Finally, it will be considered as a default state: all states that can go to this state will go to it when all other states are checked.*/
 	CharacterState();
@@ -40,8 +40,7 @@ public:
 	/**Play this state. It will perform the action linked to the characterState if it is currently doable.
 	@return CharacterState* the new characterState if the character state changed, otherwise this characterState.*/
 	CharacterState *playState(Character *character);
-	/**Restart the state, as if it was created.*/
-	void restart();
+
 	void addPossibleState(CharacterState * newState);
 	/**Check if this action has been triggered*/
 	bool isTriggered();

@@ -3,6 +3,7 @@
 class SimpleCharacterState :
 	public CharacterState
 {
+protected:
 public:
 };
 

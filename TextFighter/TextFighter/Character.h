@@ -16,9 +16,11 @@ class Character : public Observable
 {
 protected:
 	/**Current life.*/
-	float life = 0.0f;
+	float life;
 	/**Current name.*/
-	std::string name = "";
+	std::string name;
+	/**Block damage multiplier*/
+	float blockDamageMult;
 	/**CharacterView*/
 	CharacterView *characterView;
 	/**Current action.*/
@@ -52,6 +54,10 @@ public:
 	CharacterState *getCurrentState();
 	/**set the player's current State.*/
 	void setCurrentState(CharacterState *state);
+	/**Set the player's current blocking rate. 0 = total block. 1 = no block.*/
+	void setBlockDamageMultiplier(float blockMult);
+	/**reset the player's current blocking rate to the default value*/
+	void resetBlockDamageMultiplier();
 	/**set the player's current match.*/
 	void setCurMatch(Match *curMatch);
 };

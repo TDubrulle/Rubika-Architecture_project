@@ -16,5 +16,6 @@ public:
 	void playMoveLeft() override;
 	void playMoveRight() override;
 	void playIdle() override;
+	void playBlock(float dmgAmount) override;
 };
 

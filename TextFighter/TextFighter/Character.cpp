@@ -4,12 +4,14 @@
 #include "TextualCharacterView.h"
 //TTODO: remove this dependency to Match.cpp
 #include "Match.h"
+#include <iostream>
 
 Character::Character(std::string name, float life)
 {
 	this->name = name;
 	this->life = life;
 	this->characterView = new TextualCharacterView(this);
+	this->blockDamageMult = 1.0f;
 }
 
 Character::Character(std::string name, float life, CharacterView *characterView)
@@ -17,6 +19,7 @@ Character::Character(std::string name, float life, CharacterView *characterView)
 	this->name = name;
 	this->life = life;
 	this->characterView = characterView;
+	this->blockDamageMult = 1.0f;
 }
 
 Character::~Character()
@@ -63,8 +66,14 @@ void Character::idle()
 
 void Character::damage(float amount)
 {
-	life -= amount;
-	characterView->playDamage(amount);
+	life -= amount * blockDamageMult;
+
+	if (blockDamageMult >= 1.0f) {
+		characterView->playDamage(amount);
+	}
+	else {
+		characterView->playBlock(amount * blockDamageMult);
+	}
 	notifyObservers();
 }
 
@@ -81,6 +90,16 @@ CharacterState * Character::getCurrentState()
 void Character::setCurrentState(CharacterState * curState)
 {
 	currentState = curState;
+}
+
+void Character::setBlockDamageMultiplier(float blockMult)
+{
+	this->blockDamageMult = blockMult;
+}
+
+void Character::resetBlockDamageMultiplier()
+{
+	this->blockDamageMult = 1.0f;
 }
 
 void Character::setCurMatch(Match *curMatch)

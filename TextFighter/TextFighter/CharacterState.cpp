@@ -35,9 +35,6 @@ CharacterState *CharacterState::playState(Character *character)
 	return this;
 }
 
-void CharacterState::restart() {
-	//TTODO
-}
 
 void CharacterState::addPossibleState(CharacterState *newState) {
 	possibleSimpleStates.push_back(newState);

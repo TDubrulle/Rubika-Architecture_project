@@ -47,3 +47,10 @@ void TextualCharacterView::playIdle()
 	cout << character->getName() << " is waiting! What an audacious (non-)move!" << endl;
 	coutLock.unlock();
 }
+
+void TextualCharacterView::playBlock(float amount)
+{
+	coutLock.lock();
+	cout << character->getName() << " (" << character->getLife() << "hp) has blocked the attack! (-" << amount << "hp)" << endl;
+	coutLock.unlock();
+}

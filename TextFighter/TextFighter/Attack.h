@@ -4,7 +4,6 @@ class Attack :
 	public SimpleCharacterState
 {
 protected:
-	bool done;
 	float damages;
 public:
 	Attack(float damages);

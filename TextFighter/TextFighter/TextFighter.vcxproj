@@ -151,9 +151,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attack.h" />
+    <ClInclude Include="Block.h" />
     <ClInclude Include="Character.h" />
     <ClInclude Include="CharacterStateController.h" />
     <ClInclude Include="CharacterView.h" />
+    <ClInclude Include="Gamemode.h" />
     <ClInclude Include="Idle.h" />
     <ClInclude Include="Jump.h" />
     <ClInclude Include="KeyboardCharacterStateController.h" />
@@ -164,16 +166,20 @@
     <ClInclude Include="Observable.h" />
     <ClInclude Include="Observer.h" />
     <ClInclude Include="CharacterState.h" />
+    <ClInclude Include="QuickMatch.h" />
     <ClInclude Include="SimpleCharacterState.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TextualCharacterView.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Attack.cpp" />
+    <ClCompile Include="Block.cpp" />
     <ClCompile Include="Character.cpp" />
     <ClCompile Include="CharacterState.cpp" />
     <ClCompile Include="CharacterView.cpp" />
+    <ClCompile Include="Gamemode.cpp" />
     <ClCompile Include="Idle.cpp" />
     <ClCompile Include="Jump.cpp" />
     <ClCompile Include="KeyboardCharacterStateController.cpp" />
@@ -181,6 +187,8 @@
     <ClCompile Include="MoveLeft.cpp" />
     <ClCompile Include="MoveRight.cpp" />
     <ClCompile Include="Observable.cpp" />
+    <ClCompile Include="QuickMatch.cpp" />
+    <ClCompile Include="SimpleCharacterState.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -189,6 +197,7 @@
     </ClCompile>
     <ClCompile Include="TextFighter.cpp" />
     <ClCompile Include="TextualCharacterView.cpp" />
+    <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

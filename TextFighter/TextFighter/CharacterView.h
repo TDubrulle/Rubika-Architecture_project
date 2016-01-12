@@ -12,5 +12,6 @@ public:
 	virtual void playMoveLeft() = 0;
 	virtual void playMoveRight() = 0;
 	virtual void playIdle() = 0;
+	virtual void playBlock(float dmgAmount) = 0;
 };
 
